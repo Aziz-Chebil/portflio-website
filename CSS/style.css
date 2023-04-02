@@ -1,0 +1,199 @@
+body{
+    margin: 0;
+    background-color: #eee;
+}
+.header{
+    position: sticky;
+    top: 0;
+    padding:20px;
+    background-color: #fff;
+}
+.header:hover{
+    
+}
+
+.name{
+    color:black;
+    text-decoration:none;
+    
+    display: inline;
+}
+.elements{
+    float:right;
+    
+}
+.elements a {
+    margin:30px;
+    text-decoration: none;
+    color:royalblue;
+
+}
+.elements a:hover{
+    text-decoration: underline;
+}
+.home{
+    display: flex;
+    justify-content: center;
+}
+.description{
+    text-align: center;
+    display: inline-block;
+    padding-top:100px;
+}
+.description h2{
+    font-size: 50px;
+}
+.description p{
+        font-size: 32px;
+}
+.image{
+    padding-top: 30px;
+    padding-left: 80px;
+    margin-right: 200px;
+    display : inline-block;
+    vertical-align: top;
+}
+.img{
+    border-radius: 50%;
+}
+
+#aboutMe{
+    margin-top: 30px;
+}
+h2{
+    padding-left: 18px;
+    margin-top: 20px;
+    text-align: center;
+    font-size:40px;
+}
+p{
+    padding-left: 18px;
+    font-size: 18px;
+}
+.container {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.row1{
+    display: flex;
+    flex-direction:row;
+}
+.row2{
+    display: flex;
+    flex-direction:row;
+}
+.paper {
+    padding: 1em;
+    margin: 1em;
+    width: 300px;
+    cursor: pointer;
+}
+.paper img{
+    width: 300px;
+
+}
+
+
+.portfolio h2{
+    font-size: 40px;
+    text-align: center;
+}
+
+.projects{
+}
+.rowOne{
+    display: flex;
+}
+.projectOne{
+    display:grid;
+    padding-left:20px;
+    width:50%;
+}
+.projectOne p{
+    width:500px;
+}
+.projectTwo{
+    width: 50%;
+}
+
+.projectTwo p {
+    width: 500px;
+}
+
+h3{
+    padding-left: 18px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 24px;
+
+}
+
+/* (A) OUTER CONTAINER */
+.hwrap {
+    /* (A1) DIMENSIONS */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 700px;
+    height: 150px; /* OPTIONAL */
+    margin: auto;
+    /* (A2) COSMETICS */
+    background: #ffffff;
+    border: 2px solid #9e1919;
+    overflow: hidden; /* HIDE SCROLLBARS */
+  }
+  
+  /* (B) MIDDLE CONTAINER - FLEX LAYOUT */
+  .hmove {
+    display: flex;
+    position: relative;
+    top: 0; right: 0;
+  }
+  
+  /* (C) SLIDES - FORCE INTO ONE LONG HORIZONTAL ROW */
+  .hslide {
+    width: 100%;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    padding: 10px;
+    margin:auto;
+  }
+  .hslide h4{
+    font-size: 18px;
+  }
+  .hslide h6{
+    font-size: 16px;
+  }
+
+@keyframes slideh {
+   
+    0% { right: 0; }
+    10% { right: 0; }
+    12.5% { right: 100%; }
+    20% { right: 100%; }
+    25% { right: 200%; }
+    30% { right: 200%; }
+    37.5% { right: 300%; }
+    45% { right: 300%; }
+    50% { right: 400%; }
+    58% { right: 400%; }
+    62.5% { right: 500%; }
+    68% { right: 500%; }
+    75% { right: 600%; }
+    82% { right: 600%; }
+
+    87.5% { right: 700%; }
+    92% { right: 700%; }
+
+    100% { right: 0; }
+  }
+  .hmove { animation: slideh linear 45s infinite; }
+  .hmove:hover { animation-play-state: paused; }
+
+
+  .artDescription p{
+    text-align: center;
+  }
